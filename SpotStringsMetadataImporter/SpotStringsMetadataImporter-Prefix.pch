@@ -1,0 +1,6 @@
+//
+// Prefix header for all source files of the 'SpotStringsMetadataImporter' target in the 'SpotStringsMetadataImporter' project
+//
+
+#ifdef __OBJC__
+#endif

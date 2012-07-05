@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'SpotStrings' target in the 'SpotStrings' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif

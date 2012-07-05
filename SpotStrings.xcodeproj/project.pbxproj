@@ -1,0 +1,482 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5B1FA2A4158A2F32003F1628 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B1FA2A3158A2F32003F1628 /* CoreServices.framework */; };
+		5B1FA2A6158A2F32003F1628 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B1FA2A5158A2F32003F1628 /* CoreFoundation.framework */; };
+		5B1FA2AA158A2F32003F1628 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B1FA2A9158A2F32003F1628 /* Foundation.framework */; };
+		5B1FA2B0158A2F32003F1628 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5B1FA2AE158A2F32003F1628 /* InfoPlist.strings */; };
+		5B1FA2B2158A2F32003F1628 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 5B1FA2B1158A2F32003F1628 /* main.c */; };
+		5B1FA2B4158A2F32003F1628 /* GetMetadataForFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B1FA2B3158A2F32003F1628 /* GetMetadataForFile.m */; };
+		5B1FA2B7158A2F32003F1628 /* MySpotlightImporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B1FA2B6158A2F32003F1628 /* MySpotlightImporter.m */; };
+		5B1FA2C0158A3190003F1628 /* SpotStringsMetadataImporter.mdimporter in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5B1FA2A2158A2F32003F1628 /* SpotStringsMetadataImporter.mdimporter */; };
+		5BB79C8D158A19C100C10FF0 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BB79C8C158A19C100C10FF0 /* Cocoa.framework */; };
+		5BB79C97158A19C100C10FF0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5BB79C95158A19C100C10FF0 /* InfoPlist.strings */; };
+		5BB79C99158A19C100C10FF0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BB79C98158A19C100C10FF0 /* main.m */; };
+		5BB79C9D158A19C100C10FF0 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 5BB79C9B158A19C100C10FF0 /* Credits.rtf */; };
+		5BB79CA0158A19C100C10FF0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BB79C9F158A19C100C10FF0 /* AppDelegate.m */; };
+		5BB79CA3158A19C100C10FF0 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BB79CA1158A19C100C10FF0 /* MainMenu.xib */; };
+		5BB79CB0158A1AA100C10FF0 /* WindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BB79CAE158A1AA100C10FF0 /* WindowController.m */; };
+		5BB79CB1158A1AA100C10FF0 /* WindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BB79CAF158A1AA100C10FF0 /* WindowController.xib */; };
+		5BB79CB3158A1D9900C10FF0 /* countries.json in Resources */ = {isa = PBXBuildFile; fileRef = 5BB79CB2158A1D9900C10FF0 /* countries.json */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5B1FA2BD158A317F003F1628 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5BB79C7F158A19C100C10FF0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B1FA2A1158A2F32003F1628;
+			remoteInfo = SpotStringsMetadataImporter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5B1FA2BF158A318A003F1628 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/Library/Spotlight;
+			dstSubfolderSpec = 1;
+			files = (
+				5B1FA2C0158A3190003F1628 /* SpotStringsMetadataImporter.mdimporter in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5B1FA2A2158A2F32003F1628 /* SpotStringsMetadataImporter.mdimporter */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpotStringsMetadataImporter.mdimporter; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B1FA2A3158A2F32003F1628 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
+		5B1FA2A5158A2F32003F1628 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		5B1FA2A9158A2F32003F1628 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5B1FA2AD158A2F32003F1628 /* SpotStringsMetadataImporter-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SpotStringsMetadataImporter-Info.plist"; sourceTree = "<group>"; };
+		5B1FA2AF158A2F32003F1628 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5B1FA2B1158A2F32003F1628 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		5B1FA2B3158A2F32003F1628 /* GetMetadataForFile.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GetMetadataForFile.m; sourceTree = "<group>"; };
+		5B1FA2B5158A2F32003F1628 /* MySpotlightImporter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MySpotlightImporter.h; sourceTree = "<group>"; };
+		5B1FA2B6158A2F32003F1628 /* MySpotlightImporter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MySpotlightImporter.m; sourceTree = "<group>"; };
+		5B1FA2B8158A2F32003F1628 /* Importer Read Me.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Importer Read Me.txt"; sourceTree = "<group>"; };
+		5B1FA2B9158A2F32003F1628 /* SpotStringsMetadataImporter-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SpotStringsMetadataImporter-Prefix.pch"; sourceTree = "<group>"; };
+		5BB79C88158A19C100C10FF0 /* SpotStrings.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpotStrings.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BB79C8C158A19C100C10FF0 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		5BB79C8F158A19C100C10FF0 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		5BB79C90158A19C100C10FF0 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		5BB79C91158A19C100C10FF0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5BB79C94158A19C100C10FF0 /* SpotStrings-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SpotStrings-Info.plist"; sourceTree = "<group>"; };
+		5BB79C96158A19C100C10FF0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5BB79C98158A19C100C10FF0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5BB79C9A158A19C100C10FF0 /* SpotStrings-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SpotStrings-Prefix.pch"; sourceTree = "<group>"; };
+		5BB79C9C158A19C100C10FF0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		5BB79C9E158A19C100C10FF0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5BB79C9F158A19C100C10FF0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5BB79CA2158A19C100C10FF0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		5BB79CAD158A1AA100C10FF0 /* WindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WindowController.h; sourceTree = "<group>"; };
+		5BB79CAE158A1AA100C10FF0 /* WindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WindowController.m; sourceTree = "<group>"; };
+		5BB79CAF158A1AA100C10FF0 /* WindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WindowController.xib; sourceTree = "<group>"; };
+		5BB79CB2158A1D9900C10FF0 /* countries.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = countries.json; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5B1FA29F158A2F32003F1628 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B1FA2A4158A2F32003F1628 /* CoreServices.framework in Frameworks */,
+				5B1FA2A6158A2F32003F1628 /* CoreFoundation.framework in Frameworks */,
+				5B1FA2AA158A2F32003F1628 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BB79C85158A19C100C10FF0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BB79C8D158A19C100C10FF0 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5B1FA2AB158A2F32003F1628 /* SpotStringsMetadataImporter */ = {
+			isa = PBXGroup;
+			children = (
+				5B1FA2B3158A2F32003F1628 /* GetMetadataForFile.m */,
+				5B1FA2B5158A2F32003F1628 /* MySpotlightImporter.h */,
+				5B1FA2B6158A2F32003F1628 /* MySpotlightImporter.m */,
+				5B1FA2B8158A2F32003F1628 /* Importer Read Me.txt */,
+				5B1FA2AC158A2F32003F1628 /* Supporting Files */,
+			);
+			path = SpotStringsMetadataImporter;
+			sourceTree = "<group>";
+		};
+		5B1FA2AC158A2F32003F1628 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5B1FA2AD158A2F32003F1628 /* SpotStringsMetadataImporter-Info.plist */,
+				5B1FA2AE158A2F32003F1628 /* InfoPlist.strings */,
+				5B1FA2B1158A2F32003F1628 /* main.c */,
+				5B1FA2B9158A2F32003F1628 /* SpotStringsMetadataImporter-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5BB79C7D158A19C100C10FF0 = {
+			isa = PBXGroup;
+			children = (
+				5BB79C92158A19C100C10FF0 /* SpotStrings */,
+				5B1FA2AB158A2F32003F1628 /* SpotStringsMetadataImporter */,
+				5BB79C8B158A19C100C10FF0 /* Frameworks */,
+				5BB79C89158A19C100C10FF0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5BB79C89158A19C100C10FF0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5BB79C88158A19C100C10FF0 /* SpotStrings.app */,
+				5B1FA2A2158A2F32003F1628 /* SpotStringsMetadataImporter.mdimporter */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5BB79C8B158A19C100C10FF0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5BB79C8C158A19C100C10FF0 /* Cocoa.framework */,
+				5B1FA2A3158A2F32003F1628 /* CoreServices.framework */,
+				5B1FA2A5158A2F32003F1628 /* CoreFoundation.framework */,
+				5B1FA2A9158A2F32003F1628 /* Foundation.framework */,
+				5BB79C8E158A19C100C10FF0 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5BB79C8E158A19C100C10FF0 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5BB79C8F158A19C100C10FF0 /* AppKit.framework */,
+				5BB79C90158A19C100C10FF0 /* CoreData.framework */,
+				5BB79C91158A19C100C10FF0 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		5BB79C92158A19C100C10FF0 /* SpotStrings */ = {
+			isa = PBXGroup;
+			children = (
+				5BB79C9E158A19C100C10FF0 /* AppDelegate.h */,
+				5BB79C9F158A19C100C10FF0 /* AppDelegate.m */,
+				5BB79CAD158A1AA100C10FF0 /* WindowController.h */,
+				5BB79CAE158A1AA100C10FF0 /* WindowController.m */,
+				5BB79CAF158A1AA100C10FF0 /* WindowController.xib */,
+				5BB79CA1158A19C100C10FF0 /* MainMenu.xib */,
+				5BB79C93158A19C100C10FF0 /* Supporting Files */,
+			);
+			path = SpotStrings;
+			sourceTree = "<group>";
+		};
+		5BB79C93158A19C100C10FF0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5BB79CB2158A1D9900C10FF0 /* countries.json */,
+				5BB79C94158A19C100C10FF0 /* SpotStrings-Info.plist */,
+				5BB79C95158A19C100C10FF0 /* InfoPlist.strings */,
+				5BB79C98158A19C100C10FF0 /* main.m */,
+				5BB79C9A158A19C100C10FF0 /* SpotStrings-Prefix.pch */,
+				5BB79C9B158A19C100C10FF0 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5B1FA2A1158A2F32003F1628 /* SpotStringsMetadataImporter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B1FA2BA158A2F32003F1628 /* Build configuration list for PBXNativeTarget "SpotStringsMetadataImporter" */;
+			buildPhases = (
+				5B1FA29E158A2F32003F1628 /* Sources */,
+				5B1FA29F158A2F32003F1628 /* Frameworks */,
+				5B1FA2A0158A2F32003F1628 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpotStringsMetadataImporter;
+			productName = SpotStringsMetadataImporter;
+			productReference = 5B1FA2A2158A2F32003F1628 /* SpotStringsMetadataImporter.mdimporter */;
+			productType = "com.apple.product-type.bundle";
+		};
+		5BB79C87158A19C100C10FF0 /* SpotStrings */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5BB79CA6158A19C100C10FF0 /* Build configuration list for PBXNativeTarget "SpotStrings" */;
+			buildPhases = (
+				5BB79C84158A19C100C10FF0 /* Sources */,
+				5BB79C85158A19C100C10FF0 /* Frameworks */,
+				5BB79C86158A19C100C10FF0 /* Resources */,
+				5B1FA2BF158A318A003F1628 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5B1FA2BE158A317F003F1628 /* PBXTargetDependency */,
+			);
+			name = SpotStrings;
+			productName = SpotStrings;
+			productReference = 5BB79C88158A19C100C10FF0 /* SpotStrings.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5BB79C7F158A19C100C10FF0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = "Random Sequence";
+			};
+			buildConfigurationList = 5BB79C82158A19C100C10FF0 /* Build configuration list for PBXProject "SpotStrings" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5BB79C7D158A19C100C10FF0;
+			productRefGroup = 5BB79C89158A19C100C10FF0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5BB79C87158A19C100C10FF0 /* SpotStrings */,
+				5B1FA2A1158A2F32003F1628 /* SpotStringsMetadataImporter */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5B1FA2A0158A2F32003F1628 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B1FA2B0158A2F32003F1628 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BB79C86158A19C100C10FF0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BB79C97158A19C100C10FF0 /* InfoPlist.strings in Resources */,
+				5BB79C9D158A19C100C10FF0 /* Credits.rtf in Resources */,
+				5BB79CA3158A19C100C10FF0 /* MainMenu.xib in Resources */,
+				5BB79CB1158A1AA100C10FF0 /* WindowController.xib in Resources */,
+				5BB79CB3158A1D9900C10FF0 /* countries.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5B1FA29E158A2F32003F1628 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B1FA2B2158A2F32003F1628 /* main.c in Sources */,
+				5B1FA2B4158A2F32003F1628 /* GetMetadataForFile.m in Sources */,
+				5B1FA2B7158A2F32003F1628 /* MySpotlightImporter.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BB79C84158A19C100C10FF0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BB79C99158A19C100C10FF0 /* main.m in Sources */,
+				5BB79CA0158A19C100C10FF0 /* AppDelegate.m in Sources */,
+				5BB79CB0158A1AA100C10FF0 /* WindowController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5B1FA2BE158A317F003F1628 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5B1FA2A1158A2F32003F1628 /* SpotStringsMetadataImporter */;
+			targetProxy = 5B1FA2BD158A317F003F1628 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5B1FA2AE158A2F32003F1628 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5B1FA2AF158A2F32003F1628 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		5BB79C95158A19C100C10FF0 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5BB79C96158A19C100C10FF0 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		5BB79C9B158A19C100C10FF0 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5BB79C9C158A19C100C10FF0 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		5BB79CA1158A19C100C10FF0 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5BB79CA2158A19C100C10FF0 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5B1FA2BB158A2F32003F1628 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SpotStringsMetadataImporter/SpotStringsMetadataImporter-Prefix.pch";
+				INFOPLIST_FILE = "SpotStringsMetadataImporter/SpotStringsMetadataImporter-Info.plist";
+				INSTALL_PATH = "@executable_path/../Contents/Library/Spotlight";
+				LIBRARY_STYLE = BUNDLE;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = mdimporter;
+			};
+			name = Debug;
+		};
+		5B1FA2BC158A2F32003F1628 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SpotStringsMetadataImporter/SpotStringsMetadataImporter-Prefix.pch";
+				INFOPLIST_FILE = "SpotStringsMetadataImporter/SpotStringsMetadataImporter-Info.plist";
+				INSTALL_PATH = "@executable_path/../Contents/Library/Spotlight";
+				LIBRARY_STYLE = BUNDLE;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = mdimporter;
+			};
+			name = Release;
+		};
+		5BB79CA4158A19C100C10FF0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		5BB79CA5158A19C100C10FF0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		5BB79CA7158A19C100C10FF0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SpotStrings/SpotStrings-Prefix.pch";
+				INFOPLIST_FILE = "SpotStrings/SpotStrings-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		5BB79CA8158A19C100C10FF0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SpotStrings/SpotStrings-Prefix.pch";
+				INFOPLIST_FILE = "SpotStrings/SpotStrings-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5B1FA2BA158A2F32003F1628 /* Build configuration list for PBXNativeTarget "SpotStringsMetadataImporter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B1FA2BB158A2F32003F1628 /* Debug */,
+				5B1FA2BC158A2F32003F1628 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5BB79C82158A19C100C10FF0 /* Build configuration list for PBXProject "SpotStrings" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BB79CA4158A19C100C10FF0 /* Debug */,
+				5BB79CA5158A19C100C10FF0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5BB79CA6158A19C100C10FF0 /* Build configuration list for PBXNativeTarget "SpotStrings" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BB79CA7158A19C100C10FF0 /* Debug */,
+				5BB79CA8158A19C100C10FF0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5BB79C7F158A19C100C10FF0 /* Project object */;
+}
